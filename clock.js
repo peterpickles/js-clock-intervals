@@ -8,6 +8,11 @@ var secondHand = 0;
 var minuteHand = 0;
 var hourHand = 0;
 
+function setCurrentTime () {
+	console.log("currentTime!");
+}
+
+
 function showTime() {
 	secondHand += (360/60);
 	minuteHand += (360/3600);
@@ -19,6 +24,7 @@ function showTime() {
 }
 
 function startClock () {
+	setCurrentTime();
 	setInterval(showTime, 1000);
 }
 
